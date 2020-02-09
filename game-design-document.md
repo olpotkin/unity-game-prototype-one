@@ -3,8 +3,6 @@
 ## Notes / TODO
 
 1. TBD
-2. TBD
-3. ...
 
 ## I. Overview
 
@@ -12,7 +10,8 @@ Brief description of the game
 
 ### Target Platform
 
-List of the target platforms
+- macOS
+- webGL
 
 ### Visual Style
 
@@ -22,7 +21,6 @@ Here will be sketches with style concepts
 
 - Menu
 - Game
-- TBD
 
 ## II. Game menus
 
