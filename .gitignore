@@ -20,6 +20,8 @@ ExportedObj/
 *.svd
 *.pdb
 *.cs.meta
+*.DS_Store
+*/.vs/*
 
 # Unity generated meta files
 *pidb.meta
