@@ -3,7 +3,7 @@
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
-    public Vector3 offset;
+    public Vector3 offset = new Vector3(0f, 1f, -5f);
 
 
     // Start is called before the first frame update
