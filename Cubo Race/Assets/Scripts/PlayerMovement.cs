@@ -26,14 +26,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("d"))
         {
             // Add force on x-axis
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            // Add ForceMode to make terns more responsive 
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         // Check user presses "Left" command button
         if (Input.GetKey("a"))
         {
             // Add force on x-axis
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
