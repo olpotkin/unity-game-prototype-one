@@ -36,5 +36,11 @@ public class PlayerMovement : MonoBehaviour
             // Add force on x-axis
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
+
+        // If player falls down from the platform - game over
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
