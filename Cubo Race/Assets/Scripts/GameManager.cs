@@ -4,9 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    bool gameHasEnded = false;
-
     public float restartDelay = 2f;
+    public GameObject completeLevelUI;
+
+    bool gameHasEnded = false;
+    
+
+    public void FinishLevel()
+    {
+        //Debug.Log("LEVEL WON!");
+        completeLevelUI.SetActive(true);
+    }
 
 
     public void EndGame()
